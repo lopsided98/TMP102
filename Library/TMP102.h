@@ -184,19 +184,11 @@ public:
     /**
      * @brief Sets the high alert threshold
      *
-     * When the temperature equals or exceeds this threshold, the alert starts
-     * to be activated (the fault queue may prevent immediate activation of the
-     * alert pin).
-     *
      * @param temp the high threshold temperature in degrees celcius
      */
     void setAlertHighTemperature(float temp);
 
     /** * @brief Sets the low alert threshold
-     *
-     * When the temperature is equal to or below this threshold, the alert starts
-     * to be activated (the fault queue may prevent immediate activation of the
-     * alert pin).
      *
      * @param temp the low threshold temperature in degrees celcius
      */
