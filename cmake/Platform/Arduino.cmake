@@ -1066,6 +1066,7 @@ function(setup_arduino_library VAR_NAME BOARD_ID CPU LIB_PATH COMPILE_FLAGS LINK
             foreach(LIB_DEP ${LIB_DEPS})
 	        if(NOT DEP_LIB_SRCS STREQUAL TARGET_LIB_NAME AND DEP_LIB_SRCS)
                   message(STATUS "Found library ${LIB_NAME} needs ${DEP_LIB_SRCS}")
+                  target_link_libraries(${TARGET_LIB_NAME} ${DEP_LIB_SRCS})
 		endif()
 
                 setup_arduino_library(DEP_LIB_SRCS ${BOARD_ID} "${CPU}" ${LIB_DEP} "${COMPILE_FLAGS}" "${LINK_FLAGS}")
