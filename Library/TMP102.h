@@ -12,8 +12,8 @@
 /**
  * @brief Device driver for TI TMP102 temperature sensor
  *
- * Full featured device driver for the TMP102 temperature sensor. It supports
- * allows easy access to nearly all the features of the sensor.
+ * Full featured device driver for the TMP102 temperature sensor. It allows
+ * easy access to nearly all the features of the sensor.
  *
  * Datasheet: http://www.ti.com/lit/ds/symlink/tmp102.pdf
  */
